@@ -9,7 +9,8 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      overflow: hidden;
+      overflow-x: hidden;
+      background-color: black;
     }
 
     .video-background {
@@ -18,9 +19,9 @@
       left: 0;
       width: 100%;
       height: 100%;
-      pointer-events: none;
       z-index: -1;
       overflow: hidden;
+      pointer-events: none;
     }
 
     .video-background iframe {
@@ -28,6 +29,7 @@
       height: 100vh;
       object-fit: cover;
     }
+
     .ismbek {
       color: aqua;
       font-size: 60px;
@@ -43,11 +45,38 @@
 
     @keyframes typing {
       from { width: 0 }
-      to { width: 16ch } 
+      to { width: 16ch }
     }
 
     @keyframes blink {
       50% { border-color: transparent }
+    }
+
+    .conteyner-3 {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 30px;
+    }
+
+    .harhil {
+      color: aqua;
+      font-size: 30px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .harhil:hover {
+      color: white;
+      text-shadow: 0 0 10px aqua;
+    }
+
+    .contayner-2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 50px;
     }
 
     .img {
@@ -55,16 +84,16 @@
       width: 300px;
       height: 300px;
       background-size: cover;
-      border: 0.5px solid black;
+      border: 2px solid aqua;
       border-radius: 50%;
-      margin: 100px;
-      padding: 100px;
+      box-shadow: 0 0 20px aqua;
     }
 
     .about {
       color: white;
       text-align: center;
       font-family: Arial, sans-serif;
+      max-width: 600px;
     }
 
     .about-2 {
@@ -75,37 +104,38 @@
     .about-3 {
       font-size: 18px;
       line-height: 1.6;
-      max-width: 600px;
-      margin: 0 auto;
+    }
+    .container-game {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 100px;
+      margin-bottom: 100px;
     }
 
-    .contayner-2 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      gap: 50px;
-    }
-    .harhil {
+    .game1 {
       color: aqua;
-      font-size: 30px;
-      text-decoration: none;
+      font-size: 40px;
+      text-align: center;
+      transition: 0.3s;
     }
-    .conteyner-3 {
-      display: flex;
-      justify-content: center;
-      gap: 50px;
-      margin-bottom: 50px;
+
+    .game1:hover {
+      color: white;
+      text-shadow: 0 0 15px aqua;
+      transform: scale(1.1);
     }
   </style>
 </head>
 <body>
   <div class="conteyner-3">
-        <a class="harhil" href="">Skill</a>
-        <a class="harhil" href="">Game</a>
-        <a class="harhil" href="">Contact me</a>
-      </div>
+    <a class="harhil" href="#">Skill</a>
+    <a class="harhil" href="#">Game</a>
+    <a class="harhil" href="#">Contact me</a>
+  </div>
+
   <h1 class="ismbek">Noruto_Youtuber</h1>
+
   <div class="video-background">
     <iframe
       src="https://www.youtube.com/embed/EFmxPMdBqmU?autoplay=1&mute=1&loop=1&playlist=EFmxPMdBqmU"
@@ -114,13 +144,21 @@
       allowfullscreen>
     </iframe>
   </div>
+
   <div class="contayner-2">
     <div class="img"></div>
     <div class="about">
-        <h1 class="about-2">About me</h1>
-        <p class="about-3">My name is G'anisher and I am 13 years old. I am a student at IT Park. I love programming and I want to become a web developer in the future.</p>
+      <h1 class="about-2">About me</h1>
+      <p class="about-3">
+        My name is G'anisher and I am 13 years old. I am a student at IT Park. 
+        I love programming and I want to become a web developer in the future.
+      </p>
     </div>
   </div>
-      
+  <div class="container-game">
+    <h1 class="game1">Minecraft</h1>
+    <h1 class="game1">Roblox</h1>
+    <h1 class="game1">Mita</h1>
+  </div>
 </body>
 </html>
