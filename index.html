@@ -15,16 +15,25 @@
       color: white;
     }
 
+    /* 🔥 Tepadagi bo‘lim fonga yopishgan menyu */
     .conteyner-3 {
+      position: fixed; /* ekranga yopishadi */
+      top: 0;
+      left: 0;
+      width: 100%;
       display: flex;
       justify-content: center;
       gap: 50px;
-      margin-top: 20px;
+      padding: 20px 0;
+      background: rgba(0, 0, 0, 0.5); /* fon bilan birlashgan yarim shaffof */
+      backdrop-filter: blur(8px); /* fonni biroz xiralashtiradi */
+      border-bottom: 2px solid aqua;
+      z-index: 1000;
     }
 
     .harhil {
       color: aqua;
-      font-size: 28px;
+      font-size: 24px;
       text-decoration: none;
       transition: 0.3s;
     }
@@ -43,7 +52,7 @@
       overflow: hidden;
       border-right: 4px solid aqua;
       width: 0;
-      margin: 100px auto 60px;
+      margin: 150px auto 60px; /* menyu pastida joy qoldirish */
       animation: typing 3.5s steps(16) forwards, blink 0.75s step-end infinite;
     }
 
@@ -63,6 +72,7 @@
       flex-wrap: wrap;
       gap: 50px;
       min-height: 100vh;
+      padding: 0 20px;
     }
 
     .img {
@@ -94,7 +104,7 @@
 
     #games-section {
       min-height: 100vh;
-      padding-top: 100px;
+      padding-top: 120px;
     }
 
     .game-title {
@@ -128,9 +138,10 @@
       text-shadow: 0 0 15px aqua;
       transform: scale(1.1);
     }
+
     #contact {
       min-height: 100vh;
-      padding: 80px 20px;
+      padding: 120px 20px 80px;
       display: flex;
       flex-direction: column;
       align-items: center;
