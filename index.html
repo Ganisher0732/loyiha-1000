@@ -14,22 +14,26 @@
       background-color: black;
       color: white;
     }
+
     .conteyner-3 {
       display: flex;
       justify-content: center;
       gap: 50px;
       margin-top: 20px;
     }
+
     .harhil {
       color: aqua;
       font-size: 28px;
       text-decoration: none;
       transition: 0.3s;
     }
+
     .harhil:hover {
       color: white;
       text-shadow: 0 0 10px aqua;
     }
+
     .ismbek {
       color: aqua;
       font-size: 70px;
@@ -42,13 +46,16 @@
       margin: 100px auto 60px;
       animation: typing 3.5s steps(16) forwards, blink 0.75s step-end infinite;
     }
+
     @keyframes typing {
       from { width: 0 }
       to { width: 16ch }
     }
+
     @keyframes blink {
       50% { border-color: transparent }
     }
+
     .contayner-2 {
       display: flex;
       justify-content: center;
@@ -57,6 +64,7 @@
       gap: 50px;
       min-height: 100vh;
     }
+
     .img {
       background-image: url(./noruto.jpg);
       width: 300px;
@@ -67,23 +75,28 @@
       border-radius: 50%;
       box-shadow: 0 0 20px aqua;
     }
+
     .about {
       max-width: 600px;
       text-align: center;
     }
+
     .about-2 {
       color: aqua;
       font-size: 36px;
       margin-bottom: 10px;
     }
+
     .about-3 {
       font-size: 18px;
       line-height: 1.6;
     }
+
     #games-section {
       min-height: 100vh;
       padding-top: 100px;
     }
+
     .game-title {
       text-align: center;
       font-size: 50px;
@@ -91,12 +104,14 @@
       text-shadow: 0 0 15px aqua;
       margin-bottom: 50px;
     }
+
     .container-game {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 80px;
     }
+
     .game1 {
       color: aqua;
       font-size: 40px;
@@ -107,10 +122,79 @@
       border-radius: 20px;
       box-shadow: 0 0 15px aqua;
     }
+
     .game1:hover {
       color: white;
       text-shadow: 0 0 15px aqua;
       transform: scale(1.1);
+    }
+    #contact {
+      min-height: 100vh;
+      padding: 80px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-title {
+      font-size: 50px;
+      color: aqua;
+      text-shadow: 0 0 15px aqua;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 90%;
+      max-width: 500px;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px aqua;
+    }
+
+    input, textarea {
+      background: transparent;
+      border: 2px solid aqua;
+      border-radius: 10px;
+      padding: 15px;
+      color: white;
+      font-size: 16px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      box-shadow: 0 0 10px aqua;
+    }
+
+    button {
+      background-color: aqua;
+      color: black;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      padding: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: white;
+      color: black;
+      box-shadow: 0 0 15px aqua;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: gray;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -118,7 +202,7 @@
   <div class="conteyner-3">
     <a class="harhil" href="#">Skill</a>
     <a class="harhil" href="#games-section">Game</a>
-    <a class="harhil" href="#">Contact</a>
+    <a class="harhil" href="#contact">Contact</a>
   </div>
 
   <h1 class="ismbek">Noruto_Youtuber</h1>
@@ -141,5 +225,16 @@
       <div class="game1">Mita</div>
     </div>
   </div>
+
+  <section id="contact">
+    <h1 class="contact-title">Contact Me</h1>
+    <form action="mailto:example@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Ismingiz" required />
+      <input type="email" name="email" placeholder="Email manzilingiz" required />
+      <textarea name="message" rows="5" placeholder="Xabar yozing..." required></textarea>
+      <button type="submit">Yuborish</button>
+    </form>
+    <footer>© 2025 Noruto_Youtuber. Barcha huquqlar himoyalangan.</footer>
+  </section>
 </body>
 </html>
